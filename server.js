@@ -6,7 +6,7 @@ require('dotenv').config();
 const PORT = 3000
 
 let db,
-    dbConnectionString = process.env.DB_STRING,
+    dbConnectionString = process.env.MONGODB_URI,
     dbName = 'secret-confessions'
 
 MongoClient.connect(dbConnectionString, { useUnifiedTopology: true })
